@@ -71,38 +71,41 @@ Claude Code 에서 두 줄 실행:
 
 ```bash
 git clone https://github.com/Imysss/PhotonQuantumNetworkCheck.git
-cp -r PhotonQuantumNetworkCheck/skills/photon-quantum-netcheck ~/.claude/skills/   # 사용자 레벨
+cp -r PhotonQuantumNetworkCheck/plugins/photon-quantum-netcheck/skills/photon-quantum-netcheck ~/.claude/skills/   # 사용자 레벨
 # 또는 프로젝트 레벨:
-# cp -r PhotonQuantumNetworkCheck/skills/photon-quantum-netcheck <project>/.claude/skills/
+# cp -r PhotonQuantumNetworkCheck/plugins/photon-quantum-netcheck/skills/photon-quantum-netcheck <project>/.claude/skills/
 ```
 
 ## 디렉토리 구조
 
 ```
-PhotonQuantumNetworkCheck/             # 레포 루트 (= 마켓플레이스)
+PhotonQuantumNetworkCheck/                            # 레포 루트 (= 마켓플레이스)
 ├── .claude-plugin/
-│   ├── plugin.json                    # 플러그인 메타데이터
-│   └── marketplace.json               # 마켓플레이스 정의
-├── skills/
-│   └── photon-quantum-netcheck/       # 실제 스킬
-│       ├── SKILL.md                   # 진입점 (frontmatter + 카탈로그 색인 + 매트릭스)
-│       ├── references/                # 시나리오 상세 (5필드, 8 카테고리)
-│       │   ├── A-matchmaking.md
-│       │   ├── B-loading-sync.md
-│       │   ├── C-in-game-disconnect.md
-│       │   ├── D-result-phase.md
-│       │   ├── E-mobile-lifecycle.md
-│       │   ├── F-quantum-determinism.md
-│       │   ├── G-pre-match.md
-│       │   └── H-ux-gap.md
-│       ├── checklists/                # 구현·PR 점검용
-│       │   ├── matchmaking.md
-│       │   ├── in-game.md
-│       │   ├── lifecycle.md
-│       │   ├── pre-match.md
-│       │   └── ux-gap.md
-│       └── diagnostics/
-│           └── procedure.md           # 진단 모드 절차서 + 검색 키워드 매핑
+│   └── marketplace.json                              # 마켓플레이스 정의
+├── plugins/
+│   └── photon-quantum-netcheck/                      # 플러그인 본체
+│       ├── .claude-plugin/
+│       │   └── plugin.json                           # 플러그인 매니페스트
+│       └── skills/
+│           └── photon-quantum-netcheck/              # 실제 스킬
+│               ├── SKILL.md                          # 진입점 (frontmatter + 카탈로그 색인 + 매트릭스)
+│               ├── references/                       # 시나리오 상세 (5필드, 8 카테고리)
+│               │   ├── A-matchmaking.md
+│               │   ├── B-loading-sync.md
+│               │   ├── C-in-game-disconnect.md
+│               │   ├── D-result-phase.md
+│               │   ├── E-mobile-lifecycle.md
+│               │   ├── F-quantum-determinism.md
+│               │   ├── G-pre-match.md
+│               │   └── H-ux-gap.md
+│               ├── checklists/                       # 구현·PR 점검용
+│               │   ├── matchmaking.md
+│               │   ├── in-game.md
+│               │   ├── lifecycle.md
+│               │   ├── pre-match.md
+│               │   └── ux-gap.md
+│               └── diagnostics/
+│                   └── procedure.md                  # 진단 모드 절차서
 └── README.md
 ```
 

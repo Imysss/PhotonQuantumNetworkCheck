@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "photon-quantum-netcheck",
-      "source": ".",
+      "source": "./plugins/photon-quantum-netcheck",
       "description": "Photon Quantum 3 멀티플레이 네트워크 진단 / 시나리오 카탈로그"
     }
   ]

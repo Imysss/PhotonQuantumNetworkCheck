@@ -1,0 +1,20 @@
+{
+  "name": "photon-quantum-netcheck",
+  "description": "Photon Quantum 3 멀티플레이 네트워크 진단 / 시나리오 카탈로그. 매칭·로딩·인게임 끊김·라이프사이클·Desync·UX gap 등 61개 시나리오 + 진단 모드.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Imysss"
+  },
+  "homepage": "https://github.com/Imysss/PhotonQuantumNetworkCheck",
+  "repository": "https://github.com/Imysss/PhotonQuantumNetworkCheck",
+  "license": "MIT",
+  "keywords": [
+    "photon",
+    "quantum",
+    "multiplayer",
+    "unity",
+    "network",
+    "diagnostics",
+    "matchmaking"
+  ]
+}

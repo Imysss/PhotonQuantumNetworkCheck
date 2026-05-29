@@ -1,0 +1,14 @@
+{
+  "name": "imysss-plugins",
+  "owner": {
+    "name": "Imysss",
+    "url": "https://github.com/Imysss"
+  },
+  "plugins": [
+    {
+      "name": "photon-quantum-netcheck",
+      "source": ".",
+      "description": "Photon Quantum 3 멀티플레이 네트워크 진단 / 시나리오 카탈로그"
+    }
+  ]
+}

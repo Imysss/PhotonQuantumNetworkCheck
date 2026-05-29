@@ -30,7 +30,7 @@ Photon Quantum의 핵심은 결정론(determinism). 같은 input + 같은 Runtim
 
 ---
 
-## F2. SpecData / Asset 버전 차이
+## F2. Asset / 데이터 버전 차이
 
 **발생 조건**
 - 한쪽은 v1.9.7 앱, 다른 쪽은 v1.9.8 앱.
@@ -41,7 +41,7 @@ Photon Quantum의 핵심은 결정론(determinism). 같은 input + 같은 Runtim
 - "어제까지 잘 되던 게임이 오늘 갑자기 끊김" 신고.
 
 **근본 원인**
-- Quantum 시뮬레이션 코드가 `SpecData_*`의 값을 참조하는데 양쪽의 SpecData가 다름.
+- Quantum 시뮬레이션 코드가 ScriptableObject / 설정 asset의 값을 참조하는데 양쪽의 데이터가 다름.
 - AssetGuid는 같지만 내부 값이 다른 케이스 (StreamingAssets 또는 Addressable로 업데이트했을 때).
 
 **대응**

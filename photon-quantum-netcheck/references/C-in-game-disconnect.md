@@ -123,7 +123,7 @@ Quantum 세션이 시작되어 양쪽이 실제 플레이 중인 페이즈. 이 
 **근본 원인**
 - Quantum 외부 의존(예: `UnityEngine.Random`, `DateTime.Now`, `Time.deltaTime` 등 deterministic하지 않은 값)을 시뮬레이션에서 사용.
 - AssetGuid 불일치.
-- 한쪽만 다른 SpecData 버전 사용.
+- 한쪽만 다른 ScriptableObject / 설정 데이터 버전 사용.
 - 시뮬레이션에서 `IEnumerable` 순회 시 정렬되지 않은 컬렉션 사용 (Dictionary 등).
 
 **대응**
